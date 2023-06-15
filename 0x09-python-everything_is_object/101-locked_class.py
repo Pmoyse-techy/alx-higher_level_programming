@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# 101-locked_class.py
+# Naheemah Bello
 """Defines a locked class."""
 
 

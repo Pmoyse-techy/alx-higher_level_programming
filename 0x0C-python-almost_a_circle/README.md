@@ -1,33 +1,28 @@
-Resources
+# Almost a circle
+Project done during **Full Stack Software Engineering studies** at **ALX**. It aims to learn about unit testing, serialization, deserialization, JSON, `args` and `kwargs` in **Python**.
 
-Read or watch:
+## Technologies
+* Python Scripts are written with Python 3
+* Tested on Ubuntu 20.04 LTS
 
+## Files
 
+Inside `models` folder:
 
-args/kwargs
+| Filename | Description |
+| -------- | ----------- |
+| `__init__.py` | Script that converts the directory as a package |
+| `base.py` | Base class of geometrical instances |
+| `rectangle.py` | Class that inherits attributes references from `Base` class |
+| `square.py` | Class that inherits attributes references from `Square` class |
 
-JSON encoder and decoder
+Each class contains public/private attibutes, class and static methods. Also, these class raise exceptions when is required.
 
-unittest module
+Inside `tests/test_models` folder:
 
-Python test cheatsheet
-
-Learning Objectives
-
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-
-
-General
-
-What is Unit testing and how to implement it in a large project
-
-How to serialize and deserialize a Class
-
-How to write and read a JSON file
-
-What is *args and how to use it
-
-What is **kwargs and how to use it
-
-How to handle named arguments in a function
+| Filename | Description |
+| -------- | ----------- |
+| `__init__.py` | Script that converts the directory as a package |
+| `test_base.py` | Module that contains unittests to `Base` class |
+| `test_rectangle.py` | Module that contains unittests to `Rectangle` class |
+| `test_square.py` | Module that contains unittests to `Square` class |

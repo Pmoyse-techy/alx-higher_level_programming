@@ -1,2 +1,5 @@
--- Create table with defaul/unique id field
-CREATE TABLE IF NOT EXISTS unique_id (id INT DEFAULT 1 UNIQUE, name VARCHAR(256));
+-- Script that creates a table
+-- Query to create the table 'unique_id' in MySQL server
+CREATE TABLE IF NOT EXISTS unique_id (
+       id INT UNIQUE DEFAULT 1,
+       name VARCHAR(256));

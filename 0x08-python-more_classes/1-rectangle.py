@@ -1,30 +1,53 @@
 #!/usr/bin/python3
-"""A class that defines a rectangle"""
+"""
+
+This module is composed by a class that defines a Rectangle
+
+
+"""
 
 
 class Rectangle:
-    """this represents a rectangle"""
+    """ Class that defines a rectangle """
 
     def __init__(self, width=0, height=0):
-        """Initializing this rectangle class
+        """ Method that initializes the instance
+
         Args:
-            width: represents the width of the rectangle
-            height: represents the height of the rectangle
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
+            width: width of the rectangle
+            height: height of the rectangle
+
+
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """retrieves width attribute"""
+        """ method that returns the value of the width
+
+        Returns:
+            width of the rectangle
+
+
+        """
+
         return self.__width
 
     @width.setter
     def width(self, value):
-        """sets width attribute"""
+        """ method that defines the width
+
+        Args:
+            value: width
+
+        Raises:
+            TypeError: if width is not an integer
+            ValueError: if width is less than zero
+
+
+        """
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -33,12 +56,30 @@ class Rectangle:
 
     @property
     def height(self):
-        """retrieves height attribute"""
+        """ method that returns the value of the height
+
+        Returns:
+            height of the rectangle
+
+
+        """
+
         return self.__height
 
     @height.setter
     def height(self, value):
-        """sets height attribute"""
+        """ method that defines the height
+
+        Args:
+            value: height
+
+        Raises:
+            TypeError: if height is not an integer
+            ValueError: if height is less than zero
+
+
+        """
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:

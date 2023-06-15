@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# 4-print_square.py
+# Naheemah Bello
 """Defines a square-printing function."""
 
 

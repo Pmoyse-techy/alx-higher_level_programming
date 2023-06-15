@@ -1,4 +1,4 @@
--- List all cities in database
-SELECT DISTINCT cities.id, cities.name, states.name 
-	FROM cities JOIN (states) ON cities.state_id = states.id
-	ORDER BY id ASC;
+-- Script that lists all cities contained in the database
+SELECT cities.id, cities.name, states.name -- Query to join cities and states
+FROM cities
+JOIN states ON cities.state_id = states.id;
